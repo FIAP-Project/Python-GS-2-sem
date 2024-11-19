@@ -1,0 +1,94 @@
+{
+    "energy_generated": [
+        {
+            "forca": 7,
+            "pressao": 6,
+            "tensao": 3,
+            "energia": 126
+        },
+        {
+            "forca": 8,
+            "pressao": 7,
+            "tensao": 4,
+            "energia": 224
+        },
+        {
+            "forca": 9,
+            "pressao": 8,
+            "tensao": 5,
+            "energia": 360
+        },
+        {
+            "forca": 10,
+            "pressao": 9,
+            "tensao": 6,
+            "energia": 540
+        },
+        {
+            "forca": 11,
+            "pressao": 10,
+            "tensao": 7,
+            "energia": 770
+        },
+        {
+            "forca": 12,
+            "pressao": 11,
+            "tensao": 8,
+            "energia": 1056
+        },
+        {
+            "forca": 13,
+            "pressao": 12,
+            "tensao": 9,
+            "energia": 1404
+        },
+        {
+            "forca": 14,
+            "pressao": 13,
+            "tensao": 10,
+            "energia": 1820
+        },
+        {
+            "forca": 15,
+            "pressao": 14,
+            "tensao": 11,
+            "energia": 2310
+        },
+        {
+            "forca": 16,
+            "pressao": 15,
+            "tensao": 12,
+            "energia": 2880
+        },
+        {
+            "forca": 17,
+            "pressao": 16,
+            "tensao": 13,
+            "energia": 3536
+        },
+        {
+            "forca": 18,
+            "pressao": 17,
+            "tensao": 14,
+            "energia": 4284
+        },
+        {
+            "forca": 19,
+            "pressao": 18,
+            "tensao": 15,
+            "energia": 5130
+        },
+        {
+            "forca": 20,
+            "pressao": 19,
+            "tensao": 16,
+            "energia": 6080
+        },
+        {
+            "forca": 20,
+            "pressao": 20,
+            "tensao": 17,
+            "energia": 7140
+        }
+    ]
+}
