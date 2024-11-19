@@ -52,5 +52,48 @@ def receive_energy_info():
         return jsonify({'status': 'error', 'message': e}), 500
 
 
+@app.route('/get_average_energy_generated', methods=['GET'])
+def get_average_energy_generated():
+    logger.info('Received GET request for average energy generated data.')
+
+    json_data = read_from_json_file()
+    energy_data = json_data.get('energy_generated', [])
+
+    if not energy_data:
+        logger.warning('No energy generated data available.')
+        return jsonify({'message': 'No data available to calculate averages.'}), 404
+
+    total_entries = len(energy_data)
+    total_forca = 0.0
+    total_pressao = 0.0
+    total_tensao = 0.0
+    total_energia = 0.0
+
+    for index, entry in enumerate(energy_data):
+        try:
+            total_forca += float(entry.get('forca', 0))
+            total_pressao += float(entry.get('pressao', 0))
+            total_tensao += float(entry.get('tensao', 0))
+            total_energia += float(entry.get('energia', 0))
+
+        except (TypeError, ValueError) as e:
+            logger.error(f'Data format error at index {index}: {e}')
+            return jsonify({'message': f'Invalid data format in entry {index}.'}), 400
+
+    if total_entries == 0:
+        logger.warning('Total entries count is zero after processing data.')
+        return jsonify({'message': 'No valid data to calculate averages.'}), 404
+
+    averages = {
+        'forca_average': total_forca / total_entries,
+        'pressao_average': total_pressao / total_entries,
+        'tensao_average': total_tensao / total_entries,
+        'energia_average': total_energia / total_entries
+    }
+
+    logger.info('Successfully calculated averages. Returning averages.')
+    return jsonify(averages), 200
+
+
 if __name__ == '__main__':
     app.run()
