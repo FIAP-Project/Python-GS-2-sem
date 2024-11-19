@@ -1,5 +1,4 @@
 import logging
-from typing import override
 
 # ANSI escape codes for colors
 RESET = "\033[0m"
@@ -14,7 +13,6 @@ COLORS = {
 
 class ColoredFormatter(logging.Formatter):
 
-    @override
     def format(self, record):
         color = COLORS.get(record.levelname, RESET)
         message = super().format(record)
