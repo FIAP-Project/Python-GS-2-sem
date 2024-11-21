@@ -2,8 +2,12 @@ import json
 import os.path
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
+
 from logger import logger
+
 app = Flask(__name__)
+CORS(app)
 
 JSON_DATA_FILE_NAME = 'energy_data.json'
 
