@@ -28,8 +28,8 @@ Os parâmetros energéticos incluem:
 
 **Nota:** O projeto está atualmente rodando em um servidor Railway, permitindo acesso remoto contínuo à API. Os dados registrados estão sendo enviados e exibidos em um website dedicado, facilitando a visualização e análise.
 
-- **Link da API no Railway**: [Link da API](https://link-da-api-no-railway.com) *(placeholder)*
-- **Link do Website**: [Link do Website](https://link-do-website.com) *(placeholder)*
+- **Link da API no Railway**: https://python-gs-2-sem-production.up.railway.app
+- **Link do Website**: https://gs-bice.vercel.app/
 
 ## Requisitos e Dependências
 
@@ -193,7 +193,7 @@ O projeto está em execução em um servidor **Railway**, permitindo acesso à A
 
 ### Endpoints no Railway
 
-- **API Base URL**: [Link da API](https://link-da-api-no-railway.com) *(placeholder)*
+- **API Base URL**: https://python-gs-2-sem-production.up.railway.app
 
 #### Enviando Dados para a API no Railway
 
@@ -201,7 +201,7 @@ O projeto está em execução em um servidor **Railway**, permitindo acesso à A
 2. **Defina a URL**:
 
    ```
-   https://link-da-api-no-railway.com/post_energy_info
+   https://python-gs-2-sem-production.up.railway.app/post_energy_info
    ```
 
 3. **Configure o corpo da requisição** conforme as instruções anteriores.
@@ -213,7 +213,7 @@ O projeto está em execução em um servidor **Railway**, permitindo acesso à A
 2. **Defina a URL**:
 
    ```
-   https://link-da-api-no-railway.com/get_average_energy_generated
+   https://python-gs-2-sem-production.up.railway.app/get_average_energy_generated
    ```
 
 3. **Envie a requisição** e verifique as médias retornadas.
@@ -222,7 +222,7 @@ O projeto está em execução em um servidor **Railway**, permitindo acesso à A
 
 Os dados coletados pela API são exibidos em um website dedicado.
 
-- **Link do Website**: [Link do Website](https://link-do-website.com) *(placeholder)*
+- **Link do Website**: https://gs-bice.vercel.app/
 
 No website, você pode:
 
